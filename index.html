@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #fff;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        min-height: 120px;
+        padding-top: 10px;
+      }
+
+      .logo,
+      .login {
+        flex: 1 1 25%;
+      }
+
+      .menu {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo a,
+      .menu a,
+      .login a {
+        text-decoration: none;
+        color: #1d2ef0;
+        font-size: 2.8rem;
+        font-weight: 500;
+        line-height: 1;
+      }
+
+      .logo a {
+        margin-left: 20px;
+      }
+
+      .login a {
+        display: block;
+        text-align: right;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Hoofdnavigatie">
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">My Projects</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="login">
+        <a href="#">login</a>
+      </div>
+    </nav>
+  </body>
+</html>
